@@ -1,0 +1,10 @@
+CREATE DATABASE qr_auth;
+
+USE qr_auth;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    unique_id VARCHAR(32) NOT NULL UNIQUE
+);
